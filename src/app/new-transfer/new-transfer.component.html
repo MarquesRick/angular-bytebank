@@ -1,5 +1,5 @@
 <section class="container">
-  <form class="custom-form">
+  <form class="custom-form" (ngSubmit)="transfer()">
     <h2 class="custom-form__title">New Transfer</h2>
     <div class="form-field">
       <label class="form-field__label" for="valueTransfer">Value</label>
@@ -12,7 +12,7 @@
     </div>
 
     <div class="custom-button-wrapper">
-      <button class="custom-button">Transfer</button>
+      <button class="custom-button" type="submit">Transfer</button>
     </div>
   </form>
 </section>
