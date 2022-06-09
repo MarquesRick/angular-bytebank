@@ -7,13 +7,19 @@ import { Component, Output, EventEmitter } from '@angular/core';
 })
 export class NewTransferComponent {
   @Output() onTransfer = new EventEmitter<any>();
-  valueTransfer: number = 1;
-  destiny: number = 2;
+  valueTransfer: number;
+  destiny: number;
 
   transfer() {
     this.onTransfer.emit({
       valueTransfer: this.valueTransfer,
       destiny: this.destiny,
     });
+    this.cleanFields();
+  }
+
+  cleanFields() {
+    this.destiny = 0;
+    this.valueTransfer = 0;
   }
 }
