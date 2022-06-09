@@ -2,6 +2,19 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.1.6.
 
+
+# Installing
+```bash
+#install angular CLI
+npm install -g @angular/cli
+
+#create new project
+ng new bytebank
+
+#run development server
+ng serve --open
+```
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
